@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `sarah's Gatsby`,
-    description: `sarah11918 doing Gatsby`,
-    author: `@sarah11918`,
-    siteUrl: `https://sgatz.netlify.app/`,
+    title: `Summerside Community Choir`,
+    description: `PEI's longest-running community Choir!`,
+    author: `@summersidechoir`,
+    siteUrl: `https://sccplayground.netlify.app/`,
   },
   plugins: [
     {
@@ -25,7 +25,7 @@ module.exports = {
           ...options,
           custom_elements: [
             {
-              'atom:link href="https://sgatz.netlify.app/rss.xml" rel="self" type="application/rss+xml"': null,
+              'atom:link href="https://sccplayground.netlify.app/rss.xml" rel="self" type="application/rss+xml"': null,
             },
           ],
       }),
