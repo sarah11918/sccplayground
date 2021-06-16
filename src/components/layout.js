@@ -37,11 +37,16 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `2rem`,
+            color: `white`,
+            background: `gray`,
           }}
         >
-          © {new Date().getFullYear()} <a href="https://www.rainsberger.ca">Sarah Rainsberger</a>, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a> on a Chromebook via <a href="https://www.codesandbox.io">CodeSandbox</a>
+          <div>
+            <p>Contact: sumchoir@gmail.com</p>
+            <p>Rehearsals: Trinity United Church, 90 Spring St, Summerside PE</p>
+          </div>
+
+          © {new Date().getFullYear()} Summerside Community Choir 
         </footer>
       </div>
     </>

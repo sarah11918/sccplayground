@@ -6,8 +6,8 @@ const About = () => {
   return (
     <Layout>
       <SEO title="About" />
-      <h1>About Page</h1>
-      <p>Sarah is exhausted.</p>
+      <h1>About The Choir</h1>
+      <p>Here will be some more info about the choir.</p>
     </Layout>
   )
 }
