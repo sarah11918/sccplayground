@@ -2,11 +2,13 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+
+
 const NavLink = (props) => (
   <Link 
     style ={{
       color: 'lavender',
-      textDecoration: 'none'
+      textDecoration: 'none',     
     }}
     activeStyle={{
       fontWeight: 'bold',
@@ -23,18 +25,20 @@ const NavLink = (props) => (
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `gray`,
+      marginBottom: `2rem`,
+   
     }}
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `2rem 1.2rem`,
+      
       }}
     >
-      <h1 style={{ margin: 0 }}>
+{/*       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -44,19 +48,20 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
-      <nav 
+      </h1> */}
+      <ul 
         style={{ 
           listStyle: `none`, 
           float: `right`,
+          
            
         }}
       >
-        <NavLink activeClassName="active" to="/">Home</NavLink>{'  '}
-        <NavLink activeClassName="active" to="/blog/">Blog</NavLink>{'  '}
-        <NavLink activeClassName="active" to="/about/">About</NavLink>{'  '}
+        <NavLink activeClassName="active" to="/">Home</NavLink>{'    '}
+        <NavLink activeClassName="active" to="/about">About</NavLink>{'    '}
+        <NavLink activeClassName="active" to="/blog/">News</NavLink>{'    '}
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
-      </nav>
+      </ul>
     </div>
   </header>
 )
