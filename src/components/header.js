@@ -3,16 +3,26 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 
+function changeBackground(event) {
+  event.target.style.color = 'rebeccapurple';
+} 
+
+function revertBackground(event) {
+  event.target.style.color = 'lavender';
+}
 
 const NavLink = (props) => (
   <Link 
+    onMouseOver={changeBackground} 
+    onMouseLeave={revertBackground}
     style ={{
       color: 'lavender',
       textDecoration: 'none',     
     }}
     activeStyle={{
-      fontWeight: 'bold',
-      color: 'yellow'
+      fontWeight: 'bolder',
+      fontStyle: 'italic',
+      
     }}
 
     to={props.to}
@@ -49,15 +59,16 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1> */}
-      <ul 
+     <ul 
         style={{ 
           listStyle: `none`, 
           float: `right`,
           
            
         }}
+
       >
-        <NavLink activeClassName="active" to="/">Home</NavLink>{'    '}
+        <NavLink onMouseOver={changeBackground} onMouseLeave={revertBackground} activeClassName="active" to="/">Home</NavLink>{'    '}
         <NavLink activeClassName="active" to="/about">About</NavLink>{'    '}
         <NavLink activeClassName="active" to="/blog/">News</NavLink>{'    '}
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
