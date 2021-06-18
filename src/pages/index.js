@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 import RecentTweet from "../components/twitter"
+import RecentNews from "../components/recentnews"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -18,6 +19,7 @@ const IndexPage = () => (
     </ul>
     
     <RecentTweet />
+    <RecentNews />
   </Layout>
 
 )
