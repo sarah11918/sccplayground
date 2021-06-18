@@ -30,12 +30,13 @@ const Layout = ({ children }) => {
       <div style={{ 
         margin: `0 auto`,
         backgroundColor: `#f4f4f4`, 
-        padding: `1em 2em`, 
+        padding: `1em 1.5em`, 
+        letterSpacing: `0.5px`,
         textAlign: `center`, 
         fontWeight: `300`,
-        fontSize: `1.4rem`,
+        fontSize: `1.15rem`,
         lineHeight: `1.6em`,
-        marginBottom: `2em`
+        marginBottom: `1em`
         }}> Summerside Community Choir is the longest-running community choir on PEI!</div>  
       <div
         style={{
