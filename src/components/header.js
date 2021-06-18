@@ -49,25 +49,12 @@ const Header = ({ siteTitle }) => (
       
       }}
     >
-{/*       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `lavender`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1> */}
 
       <StaticImage src="../images/scclogo.png" alt="SCC Logo" width="100" />
      <ul 
         style={{ 
           listStyle: `none`, 
-          float: `right`,
-          
-           
+          float: `right`,  
         }}
 
       >
