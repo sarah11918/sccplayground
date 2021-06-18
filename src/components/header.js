@@ -1,14 +1,15 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import {StaticImage} from "gatsby-plugin-image"
 
 
 function changeBackground(event) {
-  event.target.style.color = 'rebeccapurple';
+  event.target.style.color = 'black';
 } 
 
 function revertBackground(event) {
-  event.target.style.color = 'lavender';
+  event.target.style.color = '#8b2004';
 }
 
 const NavLink = (props) => (
@@ -16,7 +17,7 @@ const NavLink = (props) => (
     onMouseOver={changeBackground} 
     onMouseLeave={revertBackground}
     style ={{
-      color: 'lavender',
+      color: '#8b2004',
       textDecoration: 'none',     
     }}
     activeStyle={{
@@ -35,7 +36,7 @@ const NavLink = (props) => (
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `gray`,
+      
       marginBottom: `2rem`,
    
     }}
@@ -59,6 +60,8 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1> */}
+
+      <StaticImage src="../images/scclogo.png" alt="SCC Logo" width="100" />
      <ul 
         style={{ 
           listStyle: `none`, 
@@ -74,6 +77,7 @@ const Header = ({ siteTitle }) => (
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
       </ul>
     </div>
+
   </header>
 )
 
