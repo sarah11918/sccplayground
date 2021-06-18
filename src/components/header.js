@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       
-      marginBottom: `2rem`,
+      marginBottom: `0.5rem`,
    
     }}
   >
@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `2rem 1.2rem`,
+        padding: `0.5rem`,
       
       }}
     >

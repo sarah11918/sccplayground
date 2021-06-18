@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div style={{ margin: `0 auto`,
-         backgroundColor: `#f4f4f4`, padding: `2em`, textAlign: `center`}}>Summerside Community Choir is the longest-running community choir on PEI!</div>  
+         backgroundColor: `#f4f4f4`, padding: `2em`, textAlign: `center`, marginBottom: `2em`}}>Summerside Community Choir is the longest-running community choir on PEI!</div>  
       <div
         style={{
           margin: `0 auto`,
