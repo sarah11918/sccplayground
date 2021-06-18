@@ -3,8 +3,9 @@ import {Timeline} from "react-twitter-widgets"
 
 const RecentTweet = () =>
   (
-   <div style={{width: `30%`}}>
-      <a 
+   <div style={{width: `80%`}}>
+    <h2 style={{fontSize:`1.35em`, letterSpacing:`0.5px`}}>Twitter</h2>
+    <a 
     class="twitter-timeline" 
     data-height="100" 
     data-dnt="true" 

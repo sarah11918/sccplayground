@@ -29,7 +29,8 @@ const RecentNews = () => {
 
 
   return(
-  <div style={{width: `50%`}}>
+  <div style={{width: `80%`}}>
+    <h2 style={{fontSize:`1.35em`, letterSpacing:`0.5px`}} >Latest News</h2>
     <ul style={{listStyle: `none`}}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
@@ -48,7 +49,7 @@ const RecentNews = () => {
           )
         })}
       </ul>
-      <span style={{border: `1px solid gray`, padding: `0.5em`, letterSpacing: `0.5px`, fontWeight: `300`}} >More News >></span>
+      <span style={{border: `1px solid gray`, padding: `0.5em 1.2em`, letterSpacing: `0.5px`, fontWeight: `300`}} >More News >></span>
 
       
   </div>
