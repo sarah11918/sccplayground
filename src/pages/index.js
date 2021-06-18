@@ -17,15 +17,6 @@ const IndexPage = () => (
       <li><Link to="/join/">Join</Link></li>
     </ul>
     
-    <a 
-    class="twitter-timeline" 
-    data-height="300" 
-    data-dnt="true" 
-    data-tweet-limit="1"  
-    data-chrome="noheader nofooter noborders transparent noscrollbar" 
-    href="https://twitter.com/summersidechoir" > Tweets
-    </a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <RecentTweet />
   </Layout>
 
