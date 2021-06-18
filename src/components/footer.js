@@ -4,11 +4,11 @@ import { Link } from "gatsby"
 
 
 function changeBackground(event) {
-  event.target.style.color = 'rebeccapurple';
+  event.target.style.color = 'gray';
 } 
 
 function revertBackground(event) {
-  event.target.style.color = 'lavender';
+  event.target.style.color = '#f2f2f2';
 }
 
 const NavLink = (props) => (
@@ -16,7 +16,7 @@ const NavLink = (props) => (
     onMouseOver={changeBackground} 
     onMouseLeave={revertBackground}
     style ={{
-      color: 'lavender',
+      color: '#f2f2f2',
       textDecoration: 'none',     
     }}
     activeStyle={{
@@ -35,7 +35,8 @@ const NavLink = (props) => (
 const Footer = ({ siteTitle }) => (
   <footer
     style={{
-      background: `gray`,
+      background: `#2f2f2f`,
+      color: `#f2f2f2`,
       marginBottom: `2rem`,
    
     }}
@@ -66,7 +67,7 @@ const Footer = ({ siteTitle }) => (
       <Link
           to="/"
           style={{
-            color: `lavender`,
+            color: `#f2f2f2`,
             textDecoration: `none`,
           }}
         >
