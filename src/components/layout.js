@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -34,21 +35,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-            color: `white`,
-            background: `gray`,
-          }}
-        >
-          <div>
-            <p>Contact: sumchoir@gmail.com</p>
-            <p>Rehearsals: Trinity United Church, 90 Spring St, Summerside PE</p>
-          </div>
-
-          © {new Date().getFullYear()} Summerside Community Choir 
-        </footer>
       </div>
+      <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
+     
     </>
   )
 }
