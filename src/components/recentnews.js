@@ -6,7 +6,7 @@ const RecentNews = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        allMarkdownRemark(limit: 3, sort: { fields: frontmatter___date, order: DESC }) {
           edges {
             node {
               timeToRead
@@ -18,7 +18,6 @@ const RecentNews = () => {
               fields {
                 slug
               }
-              excerpt(pruneLength: 50)
             }
           }
         }
