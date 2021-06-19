@@ -62,7 +62,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Sarah's Gatsby RSS Feed",
+            title: "Summerside Community Choir News",
           },
         ],
       },
