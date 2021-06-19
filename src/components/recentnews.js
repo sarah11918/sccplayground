@@ -48,7 +48,7 @@ const RecentNews = () => {
           )
         })}
       </ul>
-      <span style={{border: `1px solid gray`, padding: `0.5em 1.2em`, letterSpacing: `0.5px`, fontWeight: `300`}} >More News >></span>
+      <span style={{border: `1px solid gray`, padding: `0.5em 1.2em`, letterSpacing: `0.5px`, fontWeight: `300`}} ><Link style={{textDecoration: `none`, color: `black`}} to="/blog">More News >></Link></span>
 
       
   </div>
