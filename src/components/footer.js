@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import {StaticImage} from "gatsby-plugin-image"
 
 
 function changeBackground(event) {
@@ -73,8 +74,11 @@ const Footer = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-       
-    </div>
+        <p style={{marginBottom: "0"}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.twitter.com/SummersideChoir"><StaticImage src="../images/twitter.png" alt="SCC Twitter" width="20" />{` `} SummersideChoir</Link></p>
+        <p style={{marginBottom: "0"}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.facebook.com/SummersideChoir"><StaticImage src="../images/fb.png" alt="SCC Facebook" width="20" />{` `} SummersideChoir</Link></p>
+        <p><Link to="https://www.youtube.com/user/SummersideChoirPEI/"><StaticImage src="../images/youtube.png" alt="SCC YouTube" width="70" /></Link></p> 
+      </div> 
+    
     <div style = {{margin: `0 auto`, textAlign:`center`,}}> <p style ={{fontSize: `0.5rem`}}>© {new Date().getFullYear()} Summerside Community Choir </p></div>
        
   </footer>
