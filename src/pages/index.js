@@ -15,7 +15,9 @@ const IndexPage = () => (
     <ul>
       <li><Link to="/blog/">News</Link></li>
       <li><Link to="/about/">About</Link></li>
+      <li><Link to="/performances/">Performances</Link></li>
       <li><Link to="/join/">Join</Link></li>
+      <li><Link to="/calendar/">Calendar</Link></li>
     </ul>
     
     <RecentTweet />

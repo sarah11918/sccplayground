@@ -60,7 +60,8 @@ const Header = ({ siteTitle }) => (
       >
         <NavLink onMouseOver={changeBackground} onMouseLeave={revertBackground} activeClassName="active" to="/">Home</NavLink>{'    '}
         <NavLink activeClassName="active" to="/about">About</NavLink>{'    '}
-        <NavLink activeClassName="active" to="/blog/">News</NavLink>{'    '}
+        <NavLink activeClassName="active" to="/performances/">Performances</NavLink>{'    '}
+        <NavLink activeClassName="active" to="/calendar/">Calendar</NavLink>{'    '}
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
       </ul>
     </div>

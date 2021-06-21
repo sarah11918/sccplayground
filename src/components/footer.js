@@ -62,10 +62,11 @@ const Footer = ({ siteTitle }) => (
       >
         <NavLink onMouseOver={changeBackground} onMouseLeave={revertBackground} activeClassName="active" to="/">Home</NavLink>{'    '}
         <NavLink activeClassName="active" to="/about">About</NavLink>{'    '}
-        <NavLink activeClassName="active" to="/blog/">News</NavLink>{'    '}
+        <NavLink activeClassName="active" to="/performances/">Performances</NavLink>{'    '}
+        <NavLink activeClassName="active" to="/calendar/">Calendar</NavLink>{'    '}
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
       </ul>
-      <Link
+      {/* <Link
           to="/"
           style={{
             color: `#f2f2f2`,
@@ -73,7 +74,8 @@ const Footer = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
-        </Link>
+        </Link> */}
+        <p>sumchoir@gmail.com</p>
         <p style={{marginBottom: "0"}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.twitter.com/SummersideChoir"><StaticImage src="../images/twitter.png" alt="SCC Twitter" width="20" />{` `} SummersideChoir</Link></p>
         <p style={{marginBottom: "0"}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.facebook.com/SummersideChoir"><StaticImage src="../images/fb.png" alt="SCC Facebook" width="20" />{` `} SummersideChoir</Link></p>
         <p><Link to="https://www.youtube.com/user/SummersideChoirPEI/"><StaticImage src="../images/youtube.png" alt="SCC YouTube" width="70" /></Link></p> 
