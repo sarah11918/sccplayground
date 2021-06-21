@@ -9,16 +9,17 @@ function changeBackground(event) {
 } 
 
 function revertBackground(event) {
-  event.target.style.color = '#f2f2f2';
+  event.target.style.color = '#f4f4f4';
 }
 
 const NavLink = (props) => (
-  <Link 
+  <li><Link 
     onMouseOver={changeBackground} 
     onMouseLeave={revertBackground}
     style ={{
-      color: '#f2f2f2',
-      textDecoration: 'none',     
+      color: '#f4f4f4',
+      textDecoration: 'none',
+      lineHeight: `1.6rem`,     
     }}
     activeStyle={{
       fontWeight: 'bolder',
@@ -29,7 +30,7 @@ const NavLink = (props) => (
     to={props.to}
     >
     {props.children}
-  </Link>
+  </Link></li>
 )
 
 
@@ -37,8 +38,9 @@ const Footer = ({ siteTitle }) => (
   <footer
     style={{
       background: `#2f2f2f`,
-      color: `#f2f2f2`,
+      color: `#f4f4f4`,
       marginBottom: `2rem`,
+      fontWeight: `300`,
    
     }}
   >
@@ -47,38 +49,36 @@ const Footer = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `2rem 1.2rem`,
+        display: `flex`,
+        justifyContent: `space-between`,
       
       }}
     >
 
-     <ul 
+      <div style={{ }}>
+        <p style={{}}>sumchoir@gmail.com</p>
+        <p style={{}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.twitter.com/SummersideChoir"><StaticImage src="../images/twitter.png" alt="SCC Twitter" width="20" />{` `} SummersideChoir</Link></p>
+        <p style={{}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.facebook.com/SummersideChoir"><StaticImage src="../images/fb.png" alt="SCC Facebook" width="20" />{` `} SummersideChoir</Link></p>
+        <p><Link to="https://www.youtube.com/user/SummersideChoirPEI/"><StaticImage src="../images/youtube.png" alt="SCC YouTube" width="70" /></Link></p> 
+      </div>
+      <div style={{}}>
+        <ul 
         style={{ 
-          listStyle: `none`, 
-          float: `right`,
-          
+          listStyle: `none`,
            
         }}
+          
+  
 
       >
-        <NavLink onMouseOver={changeBackground} onMouseLeave={revertBackground} activeClassName="active" to="/">Home</NavLink>{'    '}
+        <li style={{fontWeight: `bold`}}>Find out more!</li>
         <NavLink activeClassName="active" to="/about">About</NavLink>{'    '}
         <NavLink activeClassName="active" to="/performances/">Performances</NavLink>{'    '}
         <NavLink activeClassName="active" to="/calendar/">Calendar</NavLink>{'    '}
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
       </ul>
-      {/* <Link
-          to="/"
-          style={{
-            color: `#f2f2f2`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link> */}
-        <p>sumchoir@gmail.com</p>
-        <p style={{marginBottom: "0"}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.twitter.com/SummersideChoir"><StaticImage src="../images/twitter.png" alt="SCC Twitter" width="20" />{` `} SummersideChoir</Link></p>
-        <p style={{marginBottom: "0"}}><Link style={{fontSize: "0.75rem", color:"white", fontWeight: "bold", letterSpacing: "0.5px", textDecoration: "none"}} to="https://www.facebook.com/SummersideChoir"><StaticImage src="../images/fb.png" alt="SCC Facebook" width="20" />{` `} SummersideChoir</Link></p>
-        <p><Link to="https://www.youtube.com/user/SummersideChoirPEI/"><StaticImage src="../images/youtube.png" alt="SCC YouTube" width="70" /></Link></p> 
+      </div>
+ 
       </div> 
     
     <div style = {{margin: `0 auto`, textAlign:`center`,}}> <p style ={{fontSize: `0.5rem`}}>© {new Date().getFullYear()} Summerside Community Choir </p></div>

@@ -50,8 +50,8 @@ const Header = ({ siteTitle }) => (
       }}
     >
 
-      <StaticImage src="../images/scclogo.png" alt="SCC Logo" width="100" />
-     <ul 
+      <Link to="/"><StaticImage src="../images/scclogo.png" alt="SCC Logo" width="150" /></Link>
+     {/* <ul 
         style={{ 
           listStyle: `none`, 
           float: `right`,  
@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => (
         <NavLink activeClassName="active" to="/performances/">Performances</NavLink>{'    '}
         <NavLink activeClassName="active" to="/calendar/">Calendar</NavLink>{'    '}
         <NavLink activeClassName="active" to="/join/">Join</NavLink>
-      </ul>
+      </ul> */}
     </div>
 
   </header>
