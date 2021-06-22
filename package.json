@@ -58,5 +58,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "resolutions": {
+    "webpack-assets-manifest": "5.0.1"
   }
 }
