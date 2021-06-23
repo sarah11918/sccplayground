@@ -4,33 +4,33 @@ import { Link } from "gatsby"
 import {StaticImage} from "gatsby-plugin-image"
 
 
-function changeBackground(event) {
-  event.target.style.color = 'black';
-} 
+// function changeBackground(event) {
+//   event.target.style.color = 'black';
+// } 
 
-function revertBackground(event) {
-  event.target.style.color = '#8b2004';
-}
+// function revertBackground(event) {
+//   event.target.style.color = '#8b2004';
+// }
 
-const NavLink = (props) => (
-  <Link 
-    onMouseOver={changeBackground} 
-    onMouseLeave={revertBackground}
-    style ={{
-      color: '#8b2004',
-      textDecoration: 'none',     
-    }}
-    activeStyle={{
-      fontWeight: 'bolder',
-      fontStyle: 'italic',
+// const NavLink = (props) => (
+//   <Link 
+//     onMouseOver={changeBackground} 
+//     onMouseLeave={revertBackground}
+//     style ={{
+//       color: '#8b2004',
+//       textDecoration: 'none',     
+//     }}
+//     activeStyle={{
+//       fontWeight: 'bolder',
+//       fontStyle: 'italic',
       
-    }}
+//     }}
 
-    to={props.to}
-    >
-    {props.children}
-  </Link>
-)
+//     to={props.to}
+//     >
+//     {props.children}
+//   </Link>
+// )
 
 
 const Header = ({ siteTitle }) => (
